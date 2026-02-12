@@ -1,66 +1,64 @@
 # 🍃 Habit Breaker
 
-**Habit Breaker** is a modern, responsive web application designed to help users quit smoking by visualizing their progress and providing real-time motivation. Built with **React**, **Vite**, and **TailwindCSS**, it features a beautiful dashboard and an AI-powered coach.
+O **Habit Breaker** é uma aplicação web moderna e responsiva projetada para ajudar os usuários a pararem de fumar, visualizando seu progresso e fornecendo motivação em tempo real. Desenvolvido com **React**, **Vite** e **TailwindCSS**, possui um painel intuitivo e um coach alimentado por IA.
 
 ![Dashboard Preview](public/screenshots/dashboard.png)
 
+## 🚀 Funcionalidades
 
+- **📊 Acompanhamento em Tempo Real**: Contador mostrando dias, horas, minutos e segundos sem fumar.
+- **💰 Economia Gerada**: Calcula a economia exata com base nos seus hábitos específicos.
+- **🚭 Cigarros Evitados**: Visualiza o impacto na saúde acompanhando os cigarros não fumados.
+- **🤖 Coach de IA**: Chat integrado com **Groq AI** para fornecer suporte e conselhos durante os momentos de fissura.
+- **✨ Configurações Flexíveis**: 
+  - Acompanhamento por **Maço** ou **Palito**.
+  - Definição precisa de data e hora em que parou.
+  - Funcionalidade de reset inteligente.
+- **📱 Design Responsivo**: Totalmente otimizado para experiências mobile e desktop.
+- **🔔 Notificações Motivacionais**: Sistema "Good Vibes" para enviar mensagens encorajadoras (controlado pelo usuário).
 
-## 🚀 Features
+## 📸 Capturas de Tela
 
-- **📊 Live Tracking**: Real-time counter showing days, hours, minutes, and seconds smoke-free.
-- **💰 Money Saved**: Calculates exact savings based on your specific smoking habits.
-- **🚭 Cigarettes Avoided**: Visualizes health impact by tracking unsmoked cigarettes.
-- **🤖 AI Coach**: Integrated **Groq AI** chat to provide support and advice during cravings.
-- **✨ Flexible Settings**: 
-  - Track by **Pack (Maço)** or **Single Cigarette (Palito)**.
-  - Set precise quit date and time.
-  - Smart reset functionality.
-- **📱 Responsive Design**: Fully optimized for mobile and desktop experiences.
-- **🔔 Motivational Notifications**: "Good Vibes" system to send encouraging messages (user-controlled).
-
-## 📸 Screenshots
-
-| Welcome Screen | AI Coach | Settings |
+| Tela de Boas-Vindas | Coach de Apoio | Configurações |
 | :---: | :---: | :---: |
-| ![Welcome](public/screenshots/welcome.png) | ![AI Coach](public/screenshots/ai_coach.png) | ![Settings](public/screenshots/settings.png) |
+| ![Boas-Vindas](public/screenshots/welcome.png) | ![Coach de Apoio](public/screenshots/ai_coach.png) | ![Configurações](public/screenshots/settings.png) |
 
-## 🛠️ Tech Stack
+## 🛠️ Tecnologias Utilizadas
 
 - **Frontend**: React (Vite)
-- **Styling**: TailwindCSS, Framer Motion (Animations)
-- **Icons**: Lucide React
-- **AI Integration**: Groq API
-- **State Management**: React Hooks + LocalStorage Persistence
+- **Estilização**: TailwindCSS, Framer Motion (Animações)
+- **Ícones**: Lucide React
+- **Integração de IA**: API da Groq
+- **Gerenciamento de Estado**: React Hooks + Persistência em LocalStorage
 
-## 📦 Installation
+## 📦 Instalação
 
-1.  Clone the repository:
+1.  Clone o repositório:
     ```bash
-    git clone https://github.com/your-username/smoke-free.git
-    cd smoke-free
+    git clone https://github.com/seu-usuario/habit-breaker.git
+    cd habit-breaker
     ```
 
-2.  Install dependencies:
+2.  Instale as dependências:
     ```bash
     npm install
     ```
 
-3.  Start the development server:
+3.  Inicie o servidor de desenvolvimento:
     ```bash
     npm run dev
     ```
 
-4.  Open your browser at `http://localhost:5173`.
+4.  Abra o navegador em `http://localhost:5173`.
 
-## ⚙️ Configuration
+## ⚙️ Configuração
 
-To use the AI Coach feature, generate a free API key from [Groq Console](https://console.groq.com) and enter it in the app's chat settings.
+Para usar a funcionalidade do Coach de IA, gere uma chave de API gratuita no [Groq Console](https://console.groq.com) e insira-a nas configurações de chat do app.
 
-## 🤝 Contributing
+## 🤝 Contribuição
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
 
-## 📄 License
+## 📄 Licença
 
-This project is open source and available under the [MIT License](LICENSE).
+Este projeto é código aberto e está disponível sob a [Licença MIT](LICENSE).
