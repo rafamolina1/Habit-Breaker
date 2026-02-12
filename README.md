@@ -1,8 +1,10 @@
-# 🍃 SmokeFree
+# 🍃 Habit Breaker
 
-**SmokeFree** is a modern, responsive web application designed to help users quit smoking by visualizing their progress and providing real-time motivation. Built with **React**, **Vite**, and **TailwindCSS**, it features a beautiful dashboard and an AI-powered coach.
+**Habit Breaker** is a modern, responsive web application designed to help users quit smoking by visualizing their progress and providing real-time motivation. Built with **React**, **Vite**, and **TailwindCSS**, it features a beautiful dashboard and an AI-powered coach.
 
-![SmokeFree Dashboard](https://images.unsplash.com/photo-1527661591475-527312dd65f5?q=80&w=2830&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) *Note: Replace with actual screenshot*
+![Dashboard Preview](public/screenshots/dashboard.png)
+
+
 
 ## 🚀 Features
 
@@ -16,6 +18,12 @@
   - Smart reset functionality.
 - **📱 Responsive Design**: Fully optimized for mobile and desktop experiences.
 - **🔔 Motivational Notifications**: "Good Vibes" system to send encouraging messages (user-controlled).
+
+## 📸 Screenshots
+
+| Welcome Screen | AI Coach | Settings |
+| :---: | :---: | :---: |
+| ![Welcome](public/screenshots/welcome.png) | ![AI Coach](public/screenshots/ai_coach.png) | ![Settings](public/screenshots/settings.png) |
 
 ## 🛠️ Tech Stack
 
