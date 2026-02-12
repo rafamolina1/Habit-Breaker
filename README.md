@@ -1,166 +1,58 @@
-# 🌿 Habit Breaker
+# 🍃 SmokeFree
 
-**Seu companheiro pessoal para parar de fumar e recuperar sua saúde.**
+**SmokeFree** is a modern, responsive web application designed to help users quit smoking by visualizing their progress and providing real-time motivation. Built with **React**, **Vite**, and **TailwindCSS**, it features a beautiful dashboard and an AI-powered coach.
 
-O Habit Breaker é uma aplicação web moderna e motivacional projetada para ajudar você a acompanhar sua jornada sem cigarro, celebrar conquistas e manter-se motivado com o apoio de um coach de IA.
+![SmokeFree Dashboard](https://images.unsplash.com/photo-1527661591475-527312dd65f5?q=80&w=2830&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) *Note: Replace with actual screenshot*
 
----
+## 🚀 Features
 
-## ✨ Funcionalidades
+- **📊 Live Tracking**: Real-time counter showing days, hours, minutes, and seconds smoke-free.
+- **💰 Money Saved**: Calculates exact savings based on your specific smoking habits.
+- **🚭 Cigarettes Avoided**: Visualizes health impact by tracking unsmoked cigarettes.
+- **🤖 AI Coach**: Integrated **Groq AI** chat to provide support and advice during cravings.
+- **✨ Flexible Settings**: 
+  - Track by **Pack (Maço)** or **Single Cigarette (Palito)**.
+  - Set precise quit date and time.
+  - Smart reset functionality.
+- **📱 Responsive Design**: Fully optimized for mobile and desktop experiences.
+- **🔔 Motivational Notifications**: "Good Vibes" system to send encouraging messages (user-controlled).
 
-### 📊 **Acompanhamento em Tempo Real**
-- **Tempo Sem Fumar**: Contador ao vivo mostrando dias, horas, minutos e segundos desde que você parou.
-- **Dinheiro Economizado**: Acompanhe quanto dinheiro você economizou ao não comprar cigarros.
-- **Cigarros Evitados**: Veja exatamente quantos cigarros você deixou de fumar.
-- **Vida Reganhada**: Calcule o tempo de vida que você está recuperando (baseado no estudo da UCL: 20 minutos por cigarro).
+## 🛠️ Tech Stack
 
-### 🎯 **Sistema de Conquistas de Saúde**
-Desbloqueie 9 marcos progressivos de saúde à medida que seu corpo se recupera:
-- ✅ Pressão Normalizada (20 minutos)
-- ✅ Oxigênio no Sangue (8 horas)
-- ✅ Coração Mais Seguro (24 horas)
-- ✅ Olfato e Paladar (48 horas)
-- ✅ Livre de Nicotina (72 horas)
-- ✅ Energia Renovada (2 semanas)
-- ✅ Adeus Abstinência (1 mês)
-- ✅ Pulmões Fortes (3 meses)
-- ✅ Risco Cardíaco 50% (1 ano)
+- **Frontend**: React (Vite)
+- **Styling**: TailwindCSS, Framer Motion (Animations)
+- **Icons**: Lucide React
+- **AI Integration**: Groq API
+- **State Management**: React Hooks + LocalStorage Persistence
 
-### 🤖 **Coach com Inteligência Artificial**
-- Suporte personalizado utilizando o modelo LLaMA 3.1 da Groq.
-- Respostas empáticas e motivacionais em Português do Brasil.
-- Chama você pelo nome e utiliza os pronomes corretos.
-- Persistência do histórico de chat com data e hora.
-- Interface lateral expansível.
+## 📦 Installation
 
-### 🔔 **Notificações Inteligentes**
-- **Notificações no app** a cada 15 minutos com frases motivacionais.
-- **Notificações de sistema** quando a aba do navegador não está em foco.
-- Mensagens de lembrete personalizáveis.
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/smoke-free.git
+    cd smoke-free
+    ```
 
-### 👤 **Personalização**
-- Configuração de nome e pronomes (ele/dele, ela/dela, elu/delu).
-- Saudação personalizada no painel principal.
-- O Coach de IA utiliza seu nome e pronomes.
-- Seletor de data protegido com confirmação de salvamento.
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-### 🎨 **Interface Moderna (UI/UX)**
-- Design moderno com gradientes em tons de azul-piscina e esmeralda.
-- Animações suaves com Framer Motion.
-- Layout responsivo (celular e desktop).
-- Efeitos de Vidro (Glassmorphism).
-- Tela de carregamento (Splash Screen) interativa.
+3.  Start the development server:
+    ```bash
+    npm run dev
+    ```
 
----
+4.  Open your browser at `http://localhost:5173`.
 
-## 🚀 Tecnologias
+## ⚙️ Configuration
 
-- **Frontend**: React 18 + Vite
-- **Estilização**: Tailwind CSS
-- **Animações**: Framer Motion
-- **Ícones**: Lucide React
-- **IA**: Groq API (LLaMA 3.1-8b-instant)
-- **Gerenciamento de Estado**: React Hooks + LocalStorage
-- **Proxy**: Vite proxy para lidar com CORS
+To use the AI Coach feature, generate a free API key from [Groq Console](https://console.groq.com) and enter it in the app's chat settings.
 
----
+## 🤝 Contributing
 
-## 📦 Instalação
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-### Pré-requisitos
-- Node.js 18+ e npm
-- Chave da API Groq ([Obtenha aqui](https://console.groq.com))
+## 📄 License
 
-### Configuração
-
-1. **Clone o repositório**
-```bash
-git clone https://github.com/rafamolina1/Breaker.git
-cd Breaker/webapp
-```
-
-2. **Instale as dependências**
-```bash
-npm install
-```
-
-3. **Configure as variáveis de ambiente**
-
-Crie um arquivo `.env` no diretório `webapp`:
-```env
-VITE_GROQ_API_KEY=sua_chave_api_aqui
-```
-
-4. **Inicie o servidor de desenvolvimento**
-```bash
-npm run dev
-```
-
-5. **Acesse no navegador**
-Navegue para `http://localhost:5173`
-
----
-
-## 🏗️ Estrutura do Projeto
-
-```
-webapp/
-├── src/
-│   ├── components/
-│   │   ├── Achievements.jsx       # Cards de marcos de saúde
-│   │   ├── ChatInterface.jsx      # Chat do coach de IA
-│   │   ├── Dashboard.jsx          # Painel principal com estatísticas
-│   │   ├── InAppNotification.jsx  # Notificações tipo toast
-│   │   └── SplashScreen.jsx       # Animação de boas-vindas
-│   ├── App.jsx                    # Componente principal
-│   ├── main.jsx                   # Ponto de entrada
-│   └── index.css                  # Estilos globais
-├── vite.config.js                 # Configuração do Vite + proxy
-├── tailwind.config.js             # Configuração do Tailwind CSS
-└── package.json
-```
-
----
-
-## ⚙️ Configuração
-
-### Modos de Rastreamento
-Escolha entre dois modos nas configurações:
-- **Modo Maço**: Acompanhamento por maços por dia + custo do maço.
-- **Modo Unidade**: Acompanhamento por cigarros por dia + custo por unidade.
-
-### Personalização
-- **Data de Parada**: Defina exatamente quando parou (com confirmação de salvamento).
-- **Nome e Pronomes**: Personalize sua experiência.
-- **Intervalo de Notificação**: 15 minutos (configurável no código).
-
----
-
-## 🔒 Privacidade e Dados
-
-Todos os dados são armazenados **localmente** no seu navegador usando `localStorage`:
-- Sem armazenamento em servidor.
-- Sem rastreamento de usuário.
-- O histórico do chat permanece no seu dispositivo.
-- A chave da API nunca é exposta ao cliente no build final.
-
----
-
-## 📄 Licença
-
-Este projeto é de código aberto e está disponível sob a [MIT License](LICENSE).
-
----
-
-## 🙏 Agradecimentos
-
-- **University College London** - Pesquisa sobre expectativa de vida (20 min por cigarro).
-- **Groq** - Infraestrutura de IA.
-- **Lucide** - Conjunto de ícones maravilhosos.
-- **Tailwind Labs** - Framework CSS.
-
----
-
-**Feito com ❤️ para ajudar pessoas a pararem de fumar e viverem vidas mais saudáveis.**
-
-🌿 **Mantenha-se firme. Você consegue!** 💪
+This project is open source and available under the [MIT License](LICENSE).
